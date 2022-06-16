@@ -1,0 +1,30 @@
+.information {
+    background: url(../../image/information.png) center center / cover no-repeat;
+    min-height: 700px;
+    position: relative;
+    &__block {
+        background: #292C32;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 615px;
+        position: absolute;
+        padding: 25px;
+        bottom: 3%;
+        right: 3%;
+        &_item {
+            a {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+                color: #FFFFFF;
+                text-decoration: none;
+                img {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

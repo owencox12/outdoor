@@ -1,0 +1,35 @@
+.promo {
+    background: url(../../image/promoBG.png) center center / cover no-repeat;
+    min-height: 740px;
+    padding-top: 79px;
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #E6B939;
+        padding-top: 218px;
+    }
+    &__subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        color: #FFFFFF;
+        width: 416px;
+    }
+    &__descr {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #CACCD1;
+        width: 495px;
+        margin-top: 9px;
+    }
+}

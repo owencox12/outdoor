@@ -1,0 +1,70 @@
+.guides {
+    min-height: 800px;
+    &__title {
+        text-align: left;
+        padding-top: 100px;
+    }
+    &__descr {
+        text-align: left;
+        width: 536px;
+        margin-top: 10px;
+    }
+    &__subtitle {
+        text-align: left;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 21px;
+    }
+    &__item {
+        width: 48%;
+        &_second {
+            margin-left: 104px;
+        }
+        &_info {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #575445;
+            margin-bottom: 12px;
+            margin-top: 10px;
+        }
+        &_post {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &_user {
+                display: flex;
+                align-items: center;
+                &_name {
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #575445;
+                    margin-left: 12px;
+                    span {
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 15px;
+                        color: #E6B939;
+                    }
+                }
+            }
+            &_date {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #6F7278;
+            }
+        }
+    }
+}

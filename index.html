@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <svg style="display: none;">
+        <symbol id="linkedin" viewBox="0 0 512 512">
+            <path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"/> 
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"/>
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="instagram" viewBox="0 0 56.7 56.7">
+            <g>
+                <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                    c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+                <circle cx="41.5" cy="16.4" r="2.9"/>
+                <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                    h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                    s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                    c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+            </g>
+        </symbol>
+    </svg>
+    <svg style="display: none;">
+        <symbol id="twitter" viewBox="0 0 56.693 56.693">
+            <path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/>
+        </symbol>
+    </svg>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__item">
+                    <div class="header__item_logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="header__item header__item_second">
+                    <ul class="header__item_list">
+                        <li class="header__item_list_type"><a href="#">Shop</a></li>
+                        <li class="header__item_list_type"><a href="#">About us</a></li>
+                        <li class="header__item_list_type"><a href="#">Our team</a></li>
+                        <li class="header__item_list_type"><a href="#">Buyer's guides</a></li>
+                        <li class="header__item_list_type"><a href="#">Categories</a></li>
+                    </ul>
+                    <div class="header__item_button">
+                        <button class="button button--header"><span>Buy template</span></button>
+                    </div>
+                    <div class="header__item_button">
+                        <button class="button button--headerSecond"><img src="image/korz.png" alt=""><span>Cart</span></button>
+                    </div>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+            <div class="header__burger_list">
+                <ul class="header__burger_list_menu">
+                    <li class="header__burger_list_menu_type"><a href="#">Shop</a></li>
+                    <li class="header__burger_list_menu_type"><a href="#">About us</a></li>
+                    <li class="header__burger_list_menu_type"><a href="#">Our team</a></li>
+                    <li class="header__burger_list_menu_type"><a href="#">Buyer's guides</a></li>
+                    <li class="header__burger_list_menu_type"><a href="#">Categories</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__title">
+                OUTDOOR EXPLORATION
+            </div>
+            <div class="promo__subtitle">
+                Gear for when it actually matters.
+            </div>
+            <div class="promo__descr">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+            </div>
+        </div>
+    </section>
+<section class="about">
+    <div class="container">
+        <div class="about__wrapper">
+            <div class="about__item">
+                <div class="about__item_image">
+                    <img src="image/aboutIMG.png" alt="">
+                </div>
+            </div>
+            <div class="about__item about__item_second">
+                <div class="about__item_title">
+                    Who are we?
+                </div>
+                <div class="about__item_subtitle">
+                    A bit about us.
+                </div>
+                <div class="about__item_descr">
+                    We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.
+                </div>
+                <div class="about__item_link">
+                    <a href="#">Read more <img src="image/arrow.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="about__image_top">
+            <img src="image/aboutTOP.png" alt="">
+        </div>
+        <div class="about__image_bottom">
+            <img src="image/aboutBottom.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="setting">
+    <div class="container">
+        <div class="title setting__title">
+            Our promise
+        </div>
+        <div class="subtitle setting__subtitle">
+            Setting the bar for our products.
+        </div>
+        <div class="descr setting__descr">
+            Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        </div>
+        <div class="setting__wrapper">
+            <div class="setting__item">
+                <div class="setting__item_image">
+                    <img src="image/setting1.png" alt="">
+                </div>
+                <div class="setting__item_title">
+                    Sustainable sourcing
+                </div>
+                <div class="setting__item_descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+            </div>
+            <div class="setting__item">
+                <div class="setting__item_image">
+                    <img src="image/setting2.png" alt="">
+                </div>
+                <div class="setting__item_title">
+                    Sustainable sourcing
+                </div>
+                <div class="setting__item_descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+            </div>
+            <div class="setting__item">
+                <div class="setting__item_image">
+                    <img src="image/setting3.png" alt="">
+                </div>
+                <div class="setting__item_title">
+                    Sustainable sourcing
+                </div>
+                <div class="setting__item_descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+            </div>
+            <div class="setting__item">
+                <div class="setting__item_image">
+                    <img src="image/setting4.png" alt="">
+                </div>
+                <div class="setting__item_title">
+                    Sustainable sourcing
+                </div>
+                <div class="setting__item_descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+            </div>
+            <div class="setting__item">
+                <div class="setting__item_image">
+                    <img src="image/setting5.png" alt="">
+                </div>
+                <div class="setting__item_title">
+                    Sustainable sourcing
+                </div>
+                <div class="setting__item_descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+            </div>
+            <div class="setting__item">
+                <div class="setting__item_image">
+                    <img src="image/setting6.png" alt="">
+                </div>
+                <div class="setting__item_title">
+                    Sustainable sourcing
+                </div>
+                <div class="setting__item_descr">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="store">
+    <div class="container">
+        <div class="title store__title">
+            Meet the family
+        </div>
+        <div class="subtitle store__subtitle">
+            What we have in store for you.
+        </div>
+        <div class="descr store__descr">
+            Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        </div>
+        <div class="store__wrapper">
+            <div class="store__item">
+                <div class="store__item_image">
+                    <img src="image/store1.png" alt="">
+                    <div class="store__item_image_text">
+                        <div class="store__item_image_title">
+                            Accessories
+                        </div>
+                        <div class="store__item_image_subtitle">
+                            Accessories you didn't know you needed.
+                        </div>
+                        <div class="store__item_image_link">
+                            <a href="#"><span>View Accessories</span><img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store__item">
+                <div class="store__item_image">
+                    <img src="image/store2.png" alt="">
+                    <div class="store__item_image_text">
+                        <div class="store__item_image_title">
+                            Apparel
+                        </div>
+                        <div class="store__item_image_subtitle">
+                            Check out our line of non-hiking clothes.
+                        </div>
+                        <div class="store__item_image_link">
+                            <a href="#"><span>View Apparel</span><img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store__item">
+                <div class="store__item_image">
+                    <img src="image/store3.png" alt="">
+                    <div class="store__item_image_text">
+                        <div class="store__item_image_title">
+                            Climbing Gear
+                        </div>
+                        <div class="store__item_image_subtitle">
+                            Climbing gear for every occasion.
+                        </div>
+                        <div class="store__item_image_link">
+                            <a href="#"><span>View Climbing Gear</span><img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store__item">
+                <div class="store__item_image">
+                    <img src="image/store4.png" alt="">
+                    <div class="store__item_image_text">
+                        <div class="store__item_image_title">
+                            Headwear
+                        </div>
+                        <div class="store__item_image_subtitle">
+                            Our beanies are so comfy you won't believe it.
+                        </div>
+                        <div class="store__item_image_link">
+                            <a href="#"><span>View Headwear</span><img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store__item">
+                <div class="store__item_image">
+                    <img src="image/store5.png" alt="">
+                    <div class="store__item_image_text">
+                        <div class="store__item_image_title">
+                            Hiking Gear
+                        </div>
+                        <div class="store__item_image_subtitle">
+                            Desert or mountain? Doesn't matter.
+                        </div>
+                        <div class="store__item_image_link">
+                            <a href="#"><span>View Hiking Gear</span><img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="store__item">
+                <div class="store__item_image">
+                    <img src="image/store6.png" alt="">
+                    <div class="store__item_image_text">
+                        <div class="store__item_image_title">
+                            Jackets
+                        </div>
+                        <div class="store__item_image_subtitle">
+                            Our jackets are perfect for every season.
+                        </div>
+                        <div class="store__item_image_link">
+                            <a href="#"><span>View Jackets</span><img src="image/arrow.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="store__link">
+            <a href="#"><span>Show all categories</span><img src="image/arrow.png" alt=""></a>
+        </div>
+    </div>
+</section>
+<section class="information">
+    <div class="container">
+        <div class="information__block">
+            <div class="information__block_item">
+                <a href="#"><img src="image/korz.png" alt=""><span>First Aid Kit</span></a>
+            </div>
+            <div class="information__block_item">
+                <a href="#"><span>Banger Bottle</span></a>
+            </div>
+            <div class="information__block_item">
+                <a href="#"><img src="image/camera.png" alt=""><span>Brian Schultz</span></a>
+            </div>
+            <div class="information__block_item">
+                <a href="#"><img src="image/user.png" alt=""><span>Leah Stoff</span></a>
+            </div>
+            <div class="information__block_item">
+                <a href="#"><img src="image/tg.png" alt=""><span>Catalina, California</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="shop">
+    <div class="container">
+        <div class="shop__title">
+            Shop
+        </div>
+        <div class="shop__subtitle">
+            Check out our products.
+        </div>
+        <div class="shop__descr">
+            Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.
+        </div>
+        <div class="shop__button">
+            <button class="button button--shop"><span>Visit shop</span></button>
+        </div>
+        <div class="shop__image">
+            <img src="image/shop.png" alt="">
+        </div>
+    </div>
+</section>
+<section class="guides">
+    <div class="container">
+        <div class="title guides__title">Buyer's guides</div>
+        <div class="subtitle guides__subtitle">Navigating our offering.</div>
+        <div class="descr guides__descr">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</div>
+        <div class="guides__wrapper">
+            <div class="guides__item">
+                <div class="guides__item_image">
+                    <img src="image/guide1.png" alt="">
+                </div>
+                <div class="guides__item_info">
+                    3 climbing accessories for the climber that has everything
+                </div>
+                <div class="guides__item_post">
+                    <div class="guides__item_post_user">
+                        <div class="guides__item_post_user_image">
+                            <img src="image/guideUser.png" alt="">
+                        </div>
+                        <div class="guides__item_post_user_name">Alex Jenna<br><span>QA</span></div>
+                    </div>
+                    <div class="guides__item_post_date">
+                        October 18, 2021
+                    </div>
+                </div>
+            </div>
+            <div class="guides__item">
+                <div class="guides__item_image">
+                    <img src="image/guide2.png" alt="">
+                </div>
+                <div class="guides__item_info">
+                    Biking accessories for the beaten path
+                </div>
+                <div class="guides__item_post">
+                    <div class="guides__item_post_user">
+                        <div class="guides__item_post_user_image">
+                            <img src="image/guideUser2.png" alt="">
+                        </div>
+                        <div class="guides__item_post_user_name">Woodie Brandon<br><span>Product Designer</span></div>
+                    </div>
+                    <div class="guides__item_post_date">
+                        October 18, 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sub">
+    <div class="container">
+        <div class="sub__wrapper">
+            <div class="sub__item">
+                <div class="sub__item_image">
+                    <img src="image/sub.png" alt="">
+                </div>
+            </div>
+            <div class="sub__item sub__item_second">
+                <div class="title sub__item_title">
+                    Some light reading
+                </div>
+                <div class="subtitle sub__item_subtitle">Subscribe to our magazine today.</div>
+                <div class="descr sub__item_descr">
+                    We are an outdoor gear company focused on Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et.
+                </div>
+                <div class="sub__item_link">
+                    <a href="#">Read more <img src="image/arrow.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <img src="image/footerLogo.png" alt="">
+        </div>
+        <div class="footer__wrapper">
+            <div class="footer__item">
+                <div class="footer__item_title">
+                    Pages
+                </div>
+                <ul class="footer__item_list">
+                    <li class="footer__item_list_type"><a href="#">Hiking Gear</a></li>
+                    <li class="footer__item_list_type"><a href="#">Climbing Gear</a></li>
+                    <li class="footer__item_list_type"><a href="#">Jackets</a></li>
+                    <li class="footer__item_list_type"><a href="#">Accessories</a></li>
+                    <li class="footer__item_list_type"><a href="#">Apparel</a></li>
+                    <li class="footer__item_list_type"><a href="#">Headwear</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item_title">
+                    Gear categories
+                </div>
+                <ul class="footer__item_list">
+                    <li class="footer__item_list_type"><a href="#">Home</a></li>
+                    <li class="footer__item_list_type"><a href="#">Shop</a></li>
+                    <li class="footer__item_list_type"><a href="#">Categories</a></li>
+                    <li class="footer__item_list_type"><a href="#">Buyer's guides</a></li>
+                    <li class="footer__item_list_type"><a href="#">404</a></li>
+                    <li class="footer__item_list_type"><a href="#">Password</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item_title">
+                    Company
+                </div>
+                <ul class="footer__item_list">
+                    <li class="footer__item_list_type"><a href="#">About us</a></li>
+                    <li class="footer__item_list_type"><a href="#">Our team</a></li>
+                    <li class="footer__item_list_type"><a href="#">Contact</a></li>
+                    <li class="footer__item_list_type"><a href="#">Terms & Conditions</a></li>
+                    <li class="footer__item_list_type"><a href="#">Style guide</a></li>
+                    <li class="footer__item_list_type"><a href="#">Licenses</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item_title">
+                    Newsletter
+                </div>
+                <div class="footer__item_descr">
+                    Subscribe to our (infrequent) newsletter where we share news about upcoming listings and projects.
+                </div>
+                <form action="#" class="footer__item_form">
+                    <div class="footer__item_form_input">
+                        <input type="search" placeholder="Email">
+                        <div class="footer__item_form_input_btn">
+                            <button class="button button--footer"><span>Submit</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer__wrapper_second">
+            <div class="footer__text">
+                © Outdoor Exploration, LLC. All rights reserved. Powered by Webflow
+            </div>
+            <div class="footer__icons">
+                <div class="footer__icons_icon">
+                    <svg><use xlink:href="#linkedin"></use></svg>
+                </div>
+                <div class="footer__icons_icon">
+                    <svg><use xlink:href="#facebook"></use></svg>
+                </div>
+                <div class="footer__icons_icon">
+                    <svg><use xlink:href="#instagram"></use></svg>
+                </div>
+                <div class="footer__icons_icon">
+                    <svg><use xlink:href="#twitter"></use></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+@media (max-width: 1480px) {
+    .footer__item_descr {
+        width: auto;
+    }
+    .footer__item_form_input {
+        input {
+            width: 250px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 950px;
+    }
+    .guides__item_image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .sub__item_image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .about__item_image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .footer__item_form_input {
+        input {
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .store__wrapper {
+        justify-content: center;
+    }
+    .setting__item {
+        width: 50%;
+        margin-top: 110px !important;
+    }
+    .setting__wrapper {
+        margin-top: 0;
+    }
+    .about__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .about__item_image {
+        margin-top: 50px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .about {
+        padding-bottom: 100px;
+    }
+    .about__item_title {
+        padding-top: 0;
+    }
+    .header__item_list {
+        display: none;
+    }
+    .sub__wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .sub__item_title {
+        padding-top: 0;
+    }
+    .footer__item {
+        width: 50%;
+    }
+    .footer__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__item_descr {
+        margin-top: 10px;
+    }
+    .footer {
+        padding-bottom: 50px;
+    }
+    .header__burger {
+        position: relative;
+        width: 50px;
+        height: 20px;
+        top: 3%;
+        right: 0;
+        display: block;
+        z-index: 1000;
+        &_active {
+            span {
+                display: none;
+            }
+            &::before {
+                transform: rotate(-45deg);
+                bottom: 9%;
+            }
+            &::after {
+                transform: rotate(45deg);
+                top: 9%;
+            }
+        }
+        span {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #000;
+            transition: all .3s;
+            top: 9px;
+            left: 0;
+        }
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #000;
+            transition: all .3s;
+            top: 0;
+            left: 0;
+            content: '';
+        }
+        &::after {
+            bottom: -16%;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: #000;
+            transition: all .3s;
+            content: '';
+        }
+    }
+    .header__burger_list {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 79px;
+        background: #000;
+        z-index: 1000;
+        display: block;
+        left: -100%;
+        transition: all .3s;
+        &_active {
+            left: 0;
+        }
+        &_menu {
+            padding-left: 50px;
+            padding-top: 70px;
+            &_type {
+                margin: 20px 0;
+                a {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 30px;
+                    line-height: 20px;
+                    color: #ffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 520px;
+    }
+    .setting__descr {
+        width: 450px;
+    }
+    .setting__item_descr {
+        width: 200px;
+    }
+    .store__descr {
+        width: 450px;
+    }
+    .information__block {
+        width: 500px;
+        bottom: 50%;
+    }
+    .information__block_item {
+        a {
+            font-size: 11px;
+        }
+    }
+    .guides__wrapper {
+        flex-wrap: wrap;
+    }
+    .guides__item {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .header__burger_list {
+        width: 60%;
+    }
+    .guides {
+        padding-bottom: 100px;
+    }
+}
+
+@media (max-width: 571px) {
+    .container {
+        max-width: 420px;
+    }
+    .promo__descr {
+        width: 275px;
+    }
+    .about__item_second {
+        margin-left: 0;
+    }
+    .guides__descr {
+        width: auto;
+    }
+    .sub__item_second {
+        margin-left: 0;
+    }
+    .shop__descr {
+        width: auto;
+    }
+    .information__block {
+        width: 400px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .information__block_item {
+        &:nth-child(5) {
+            margin-top: 10px;
+        }
+    }
+    .sub__item_descr {
+        width: auto;
+    }
+    .store__descr {
+        width: auto;
+    }
+    .setting__descr {
+        width: auto;
+    }
+    .about__item_descr {
+        width: auto;
+    }
+    .promo {
+        min-height: 680px;
+    }
+    .header__item_second {
+        display: none;
+    }
+    .header__burger_list {
+        width: 80%;
+    }
+}
+
+@media (max-width: 470px) {
+    .container {
+        max-width: 320px;
+    }
+    .promo__subtitle {
+        font-size: 40px;
+    }
+    .setting__item {
+        width: 100%;
+    }
+    .store__item_image {
+        img {
+            max-width: 100%;
+        }
+    }
+    .footer__item_form_input {
+        input {
+            width: 150px;
+        }
+    }
+    .promo__subtitle {
+        width: auto;
+    }
+    .about__image_top {
+        display: none;
+    }
+    .information__block {
+        width: 250px;
+        left: 10%;
+        bottom: 30%;
+    }
+    .information__block_item {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px !important;
+    }
+    .information {
+        min-height: 400px;
+    }
+    .shop {
+        padding-bottom: 40px;
+    }
+}

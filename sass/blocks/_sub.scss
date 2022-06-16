@@ -1,0 +1,38 @@
+.sub {
+    &__wrapper {
+        display: flex;
+    }
+    &__item {
+        &_second {
+            margin-left: 104px;
+        }
+        &_title {
+            text-align: left;
+            padding-top: 130px;
+        }
+        &_subtitle {
+            text-align: left;
+            width: 295px;
+        }
+        &_descr {
+            text-align: left;
+            width: 384px;
+            margin-top: 7px;
+            margin-bottom: 20px;
+        }
+        &_link {
+            a {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 21px;
+                color: #575445;
+                text-decoration: none;
+                img {
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}

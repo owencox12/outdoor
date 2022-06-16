@@ -1,0 +1,66 @@
+.button {
+    &--header {
+        background: #575445;
+        border-radius: 6px;
+        width: 143px;
+        height: 44px;
+        border: none;
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+    &--headerSecond {
+        background: #575445;
+        width: 125px;
+        height: 44px;
+        border-radius: 6px;
+        border: none;
+        img {
+            margin-right: 8px;
+        }
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+    &--shop {
+        width: 111px;
+        height: 44px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        border: none;
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            color: #575445;
+        }
+    }
+    &--footer {
+        width: 79px;
+        height: 39px;
+        background: #575445;
+        border-radius: 10px;
+        border: none;
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+    }
+}

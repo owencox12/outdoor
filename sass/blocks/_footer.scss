@@ -1,0 +1,98 @@
+.footer {
+    background: #575445;
+    min-height: 600px;
+    &__text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &__icons {
+        display: flex;
+        &_icon {
+            margin: 0 10px;
+            cursor: pointer;
+            svg {
+                width: 25px;
+                height: 25px;
+                fill: #fff;
+                &:hover {
+                    transition: all .3s;
+                    fill: gray;
+                }
+            }
+        }
+    }
+    &__logo {
+        text-align: center;
+        padding-top: 100px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        &_second {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__item {
+        width: 25%;
+        &_title {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #E6B939;
+        }
+        &_list {
+            &_type {
+                margin: 9px 0;
+                a {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
+        }
+        &_form {
+            &_input {
+                position: relative;
+                display: inline-block;
+                input {
+                    width: 350px;
+                    height: 53px;
+                    border: 1px solid #E5E7EB;
+                    border-radius: 8px;
+                    padding-left: 15px;
+                }
+                &_btn {
+                    position: absolute;
+                    right: 3%;
+                    top: 18%;
+                }
+            }
+        }
+        &_descr {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: #FAFAFC;
+            width: 438px;
+            margin-bottom: 9px;
+        }
+    }
+}
